@@ -1,0 +1,588 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.homePage, .aboutPage, .servicesPage, .industriesPage, .contactPage {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.homePage {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  background: #1a1a1a;
+}
+
+.homePage video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#overlayText {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: white;
+}
+
+#overlayText h1 {
+  font-size: 3rem;
+  letter-spacing: 10px;
+}
+
+#overlayText p {
+  font-size: 1.5rem;
+}
+
+.aboutPage {
+  width: 100%;
+  height: 100%;
+}
+
+#aboutTop {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background: white;
+}
+
+#aboutLeft,
+#aboutRight {
+  width: 45%;
+  height: 50%;
+}
+
+#aboutLeft img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutPage h4 {
+  color: #536dfe;
+  letter-spacing: 5px;
+  font-size: 1.25rem;
+}
+
+.aboutPage h2 {
+  font-size: 2.5rem;
+}
+
+.aboutPage p,
+.contactTopLine p {
+  color: #56676b;
+  font-size: 1.5rem;
+}
+
+.servicesPartner {
+  background: #f5f7fa;
+  padding: 5%;
+}
+
+.servicesPartner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.partnerList {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.partnerCol {
+  width: 30%;
+}
+
+.staff {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.staff p {
+  margin: 3% 0 15% 0;
+}
+
+.leadershipTeam,
+.advisoryTeam {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.staffCard img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.staffTitle {
+  margin: 2.5% 0 5% 0;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.servicesPage p,
+.industriesPage p {
+  color: #56676b;
+}
+
+footer {
+  background: black;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 3% 2% 2% 2%;
+}
+
+.footerContent {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 5% auto;
+}
+
+.col {
+  width: 20%;
+  height: 100%;
+}
+
+.col img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  background: white;
+}
+
+.col button {
+  border: 2px solid white;
+  background: black;
+  color: white;
+  font-size: 1rem;
+  padding: 2%;
+  border-radius: 5px;
+  width: 50%;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.col button:hover {
+  background: white;
+  color: black;
+}
+
+.servicesPage {
+  width: 100%;
+  height: 100%;
+}
+
+.servicesPage h4,
+.industriesPage h4 {
+  color: #536dfe;
+  letter-spacing: 3px;
+}
+
+.servicesTopLine,
+.industriesTopLine {
+  font-size: 1.25rem;
+  padding: 0 5%;
+}
+
+.servicesContent,
+.industriesContent {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.servicesCards {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.card {
+  width: 375px;
+  height: 350px;
+  margin: 1%;
+  text-align: left;
+  padding: 2%;
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+}
+
+.cardText {
+  margin-top: 6%;
+}
+
+.servicesMiddle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 100px auto 150px auto;
+}
+
+.middleText {
+  width: 30%;
+  text-align: left;
+}
+
+.servicesMiddle img {
+  width: 65%;
+}
+
+#middleHeader {
+  letter-spacing: 3px;
+}
+
+#aboutBottom {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  text-align: center;
+  background: #f5f7fa;
+  margin-top: 100px;
+}
+
+#brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 90%;
+  margin: 50px auto;
+}
+
+#brands img {
+  width: 80%;
+  object-fit: cover;
+  margin: 10%;
+}
+
+.divider {
+  background: #536dfe;
+  height: 3px;
+  width: 40%;
+  margin: 8% auto;
+}
+
+.industriesCards {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.idCards {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.idOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.industryName {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  color: white;
+}
+
+.contactContent {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  padding: 0 10% 2.5% 10%;
+}
+
+.contactTopLine {
+  text-align: center;
+}
+
+.contactTopLine h4 {
+  letter-spacing: 3px;
+  color: #536dfe;
+}
+
+#contactBottomLine {
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 2rem;
+}
+
+.emailContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 5%;
+}
+
+.emailContainer img,
+.emailOuter {
+  width: 50%;
+}
+
+.emailOuter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #536dfe;
+  color: white;
+}
+
+.emailItem {
+  margin: 10% 0;
+}
+
+.addressContainer {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.addressItem {
+  position: relative;
+}
+
+.addressItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.addressOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.addressText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: white;
+  text-align: center;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media only screen and (max-width: 991px) {
+  #aboutTop {
+    flex-direction: column;
+    padding: 0 1%;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  #aboutLeft,
+  #aboutRight {
+    width: 80%;
+    height: 100%;
+  }
+
+  #aboutBottom {
+    padding: 10%;
+    margin-top: 100px;
+  }
+
+  .divider {
+    margin: 15% auto;
+  }
+
+  .servicesMiddle {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .servicesMiddle img {
+    width: 100%;
+  }
+
+  .middleText {
+    margin-top: 50px;
+    width: 90%;
+    text-align: center;
+  }
+
+  #brands {
+    width: 80%;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 5% auto;
+  }
+
+  #brands img {
+    width: 35%;
+    margin: 2% auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footerContent {
+    width: 100%;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 80%;
+    margin: 3% auto;
+  }
+
+  .servicesPartner {
+    padding: 15% 5%;
+  }
+
+  .partnerList {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .partnerCol {
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  .staff {
+    margin-top: 50px;
+  }
+
+  .contactContent {
+    padding: 0;
+  }
+
+  .emailContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .emailContainer img {
+    width: 100%;
+  }
+
+  .emailOuter {
+    width: 100%;
+    padding: 2% 0;
+  }
+
+  .addressContainer {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 964px) {
+  .card {
+    width: 100%;
+  }
+
+  .cardText h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .staffCard {
+    text-align: center;
+  }
+}
